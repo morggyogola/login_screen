@@ -9,6 +9,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
+
         body: Padding(
       padding: EdgeInsets.only(top: 60.0),
       child: Column(
@@ -79,8 +80,9 @@ class LoginPage extends StatelessWidget {
             color: Colors.blue,
             radius: 100,
             width: 700,
-            borderColor: Colors.greenAccent,
+            borderColor: Colors.greenAccent, icon:Icons.mail,
           ),
+          SizedBox(height: 100,),
           ButtonWidget(
             widget: TextWidget(
                 text: "Login with google",
@@ -92,8 +94,9 @@ class LoginPage extends StatelessWidget {
             color: Colors.red,
             radius: 100,
             width: 700,
-            borderColor: Colors.greenAccent,
+            borderColor: Colors.greenAccent, icon:Icons.g_mobiledata,
           ),
+          SizedBox(height: 100,),
           ButtonWidget(
             widget: TextWidget(
                 text: "Login with Facebook",
@@ -105,10 +108,12 @@ class LoginPage extends StatelessWidget {
             color: Colors.blue,
             radius: 100,
             width: 700,
-            borderColor: Colors.greenAccent,
+            borderColor: Colors.greenAccent, icon: Icons.facebook,
           ),
+          SizedBox(height: 100,),
           ButtonWidget(
             widget: TextWidget(
+              
                 text: "Next",
                 fontWeight: FontWeight.w500,
                 fontSize: 15,
@@ -123,6 +128,10 @@ class LoginPage extends StatelessWidget {
 
         ],
       ),
-    ));
+          
+    )
+       
+    );
+   
   }
 }

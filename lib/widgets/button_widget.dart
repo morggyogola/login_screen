@@ -8,8 +8,9 @@ class ButtonWidget extends StatelessWidget {
   final double radius;
   final double width;
   final Color borderColor;
+  final icon;
 
-  const ButtonWidget({super.key,  required this.widget, required this.color, required this.radius, required this.width, required this.borderColor});
+  const ButtonWidget({super.key,  required this.widget, required this.color, required this.radius, required this.width, required this.borderColor, this.icon});
 
   @override
   Widget build(BuildContext context) {
